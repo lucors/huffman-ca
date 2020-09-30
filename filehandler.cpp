@@ -45,7 +45,7 @@ string Coder::readFile (string inFilename){
     ifstream inFile;
     inFile.open(inFilename.c_str(), ios::binary);
     if (inFile.is_open()){
-        //Чтение
+        //Р§С‚РµРЅРёРµ
         string readed;
         char byte;
         while (inFile.get(byte)){
@@ -231,7 +231,7 @@ string Packer::pack (string input){
     for (size_t i = 0; i < input.size(); i++){
         symbolsFreq[input[i]]++;
     }
-////Отображает кол-во каждого символа
+////РћС‚РѕР±СЂР°Р¶Р°РµС‚ РєРѕР»-РІРѕ РєР°Р¶РґРѕРіРѕ СЃРёРјРІРѕР»Р°
 //    for (map <char, int>::iterator it = symbolsFreq.begin(); it != symbolsFreq.end(); it++){
 //        cout << it->first << ':' << it->second << endl;
 //    }
@@ -252,7 +252,7 @@ string Packer::pack (string input){
     Node *root = nodeList.front();
     fillEncryptMap(root);
 
-////Коды символом
+////РљРѕРґС‹ СЃРёРјРІРѕР»РѕРј
 //    cout << endl;
 //    for (map <char, vector<bool> >::iterator it=encryptMap.begin();
 //         it != encryptMap.end(); it++) {
